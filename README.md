@@ -40,7 +40,7 @@ export CUDA_VISIBLE_DEVICES=0
 
 This repository includes metadata as JSON files for the evaluation sets under ```test_img_jsons/```, and 
 ```test_vid_jsons```. Download the evaluation data for images from [here](https://livejohnshopkins-my.sharepoint.com/:u:/g/personal/sambasa2_jh_edu/IQC-8OHn2YdZSpyABAyoIqppAXBF5fUvgEExe54d8PE5bdk?e=Cp7fN4) and videos from [here](https://livejohnshopkins-my.sharepoint.com/:u:/g/personal/sambasa2_jh_edu/IQAm_sOvhZdbS4jtegsOig7nAZMWb18MQLCiOaIeH64_vDY?e=TFN71q). Extract the 
-files to ```test_img_data/``` and ```test_vid_data```,  respectively.
+files to ```test_img_data/``` and ```test_vid_data/```,  respectively.
 
 ### JSON format for images
 
@@ -143,7 +143,7 @@ python calc_dover.py \
   --root_dir <output_directory_from_previous> \
   --methods wan
 ```
-Finally, inspect the generated ```dover_summary.csv``` for the values.
+Inspect the generated ```dover_summary.csv``` for the values.
 
 ### Mixed-degradation inference
 
@@ -159,6 +159,14 @@ python inference.py \
   --t0 0.4 \
   --t_min 0.0001 \
   --bridge_sampler_steps 20
+```
+
+### Outputs
+
+Results are written under:
+
+```bash
+results/<backend>/<dataset_name>/
 ```
 
 ## Single-Sample Inference
@@ -215,9 +223,22 @@ For video single-sample inference, `--single_input` can be either:
 - a video file such as `.mp4`, `.mov`, `.avi`, `.mkv`, or `.webm`
 - a directory containing ordered frame images
 
+### Outputs
+
+Outputs are written under:
+
+```bash
+results/<backend>/single/pred/
+```
+
+For WAN video inference, the script saves:
+
+- individual restored frames
+- `result.mp4`
+
 ## Gradio Demo
 
-Launch the demo with:
+For demo on your local machine, launch with:
 
 ```bash
 bash run_gradio.sh
@@ -234,30 +255,6 @@ The demo:
 - uses `wan` for video input
 - uses `flux` for image input
 - lets you select one degradation checkpoint or multiple checkpoints for mixed inference
-- saves temporary outputs under `gradio_tmp/`
-
-## Outputs
-
-### Evaluation
-
-Results are written under:
-
-```bash
-results/<backend>/<dataset_name>/
-```
-
-### Single-sample inference
-
-Outputs are written under:
-
-```bash
-results/<backend>/single/pred/
-```
-
-For WAN video inference, the script saves:
-
-- individual restored frames
-- `result.mp4`
 
 ## Citation
 
