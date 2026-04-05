@@ -4,7 +4,7 @@ Official code for the paper **"Your Pre-trained Diffusion Model Secretly Knows R
 
 [Sudarshan Rajagopalan](https://sudraj2002.github.io/) | [Vishal M. Patel](https://scholar.google.com/citations?user=AkEXTbIAAAAJ&hl=en)
 
-[![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://sudraj2002.github.io/yptpage/) [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/)
+[![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://sudraj2002.github.io/yptpage/) [![Demo](https://img.shields.io/badge/Demo-Live-green)](https://your-demo-link.com) [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/)
 
 ## Overview
 
