@@ -39,7 +39,7 @@ export CUDA_VISIBLE_DEVICES=0
 ## Data download
 
 This repository includes metadata as JSON files for the evaluation sets under ```test_img_jsons/```, and 
-```test_vid_jsons```. Download the evaluation data for images from [here]() and videos from [here](). Extract the 
+```test_vid_jsons```. Download the evaluation data for images from [here](https://livejohnshopkins-my.sharepoint.com/:u:/g/personal/sambasa2_jh_edu/IQC-8OHn2YdZSpyABAyoIqppAXBF5fUvgEExe54d8PE5bdk?e=Cp7fN4) and videos from [here](https://livejohnshopkins-my.sharepoint.com/:u:/g/personal/sambasa2_jh_edu/IQAm_sOvhZdbS4jtegsOig7nAZMWb18MQLCiOaIeH64_vDY?e=TFN71q). Extract the 
 files to ```test_img_data/``` and ```test_vid_data```,  respectively.
 
 ### JSON format for images
@@ -124,7 +124,7 @@ python inference.py \
   --bridge_sampler_steps 20
 ```
 
-To calculate DOVER, setup the DOVER codebase and environments according to the official [codebase](). After setup, 
+To calculate DOVER, setup the DOVER codebase and environments according to the official [codebase](https://github.com/VQAssessment/DOVER). After setup, 
 place ```calc_dover.py``` in the DOVER codebase. To generate the videos from the WAN result directory, run 
 ```bash
 python frames_to_vid.py \
@@ -266,3 +266,9 @@ If you find this work useful, please cite:
 ```bibtex
 
 ```
+
+## Acknowledgments
+
+Our work uses the [WAN](https://github.com/Wan-Video/Wan2.1) and [FLUX](https://huggingface.co/black-forest-labs/FLUX.1-dev) models. Additionally, we use the following datasets:
+[RESIDE](https://sites.google.com/view/reside-dehaze-datasets/reside-%CE%B2), [Snow100k](https://sites.google.com/view/yunfuliu/desnownet), [Rain13K](https://github.com/swz30/Restormer), [GoPro](https://seungjunnah.github.io/Datasets/gopro.html), [LOL](https://daooshee.github.io/BMVC2018website/), [HazeRD](https://ieee-dataport.org/documents/hazerd-outdoor-dataset-dehazing-algorithms), [WeatherBench](https://github.com/guanqiyuan/WeatherBench), [LHP](https://github.com/yunguo224/LHP-Rain), [4KRD](https://github.com/dseny/UHDVD), [SICE](https://github.com/csjcai/SICE), 
+[LOLBlur](https://github.com/sczhou/LEDNet), [CDD](https://github.com/gy65896/onerestore), [TOLED and POLED](https://yzhouas.github.io/projects/UDC/udc.html), [REVIDE](https://github.com/BookerDeWitt/REVIDE_Dataset), [RVSD](https://haoyuchen.com/VideoDesnowing), [NTU-Rain](https://github.com/hotndy/SPAC-SupplementaryMaterials), [SDSD](https://github.com/JIA-Lab-research/SDSD?tab=readme-ov-file), [RHVD](https://qualinet.github.io/databases/video/real-haze-video-database/), [AAU](https://github.com/chrisbahnsen/aau-rainsnow-eval), [LasVR](https://github.com/stayhungry1/Video-Rain-Removal) and [Lol-iPhone](https://github.com/Li-Chongyi/Lighting-the-Darkness-in-the-Deep-Learning-Era-Open).
