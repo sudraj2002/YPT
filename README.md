@@ -1,6 +1,6 @@
 # Your Pre-trained Diffusion Model Secretly Knows Restoration
 
-Code for the paper **"Your Pre-trained Diffusion Model Secretly Knows Restoration"** 
+Code for the paper **"Your Pre-trained Diffusion Model Secretly Knows Restoration"**.
 
 [Sudarshan Rajagopalan](https://sudraj2002.github.io/) | [Vishal M. Patel](https://scholar.google.com/citations?user=AkEXTbIAAAAJ&hl=en)
 
