@@ -6,8 +6,6 @@ Code for the paper **"Your Pre-trained Diffusion Model Secretly Knows Restoratio
 
 [![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://sudraj2002.github.io/yptpage/) [![Demo](https://img.shields.io/badge/▶-Demo-orange)](https://76c528eecaf357fdb9.gradio.live) [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/)
 
-## Overview
-
 ## Demo
 
 For trying the demo, use these login credentials:
