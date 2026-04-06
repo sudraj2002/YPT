@@ -14,6 +14,8 @@ For trying the demo, use these login credentials:
 username: ypt
 password: try_ypt_demo
 
+Note: Uploaded inputs and generated outputs may be temporarily stored on the server to run inference and return results.
+
 ## Setup
 
 ### 1. Creating environment
