@@ -267,7 +267,15 @@ The demo:
 If you find this work useful, please cite:
 
 ```bibtex
-
+@misc{rajagopalan2026pretraineddiffusionmodelsecretly,
+      title={Your Pre-trained Diffusion Model Secretly Knows Restoration}, 
+      author={Sudarshan Rajagopalan and Vishal M. Patel},
+      year={2026},
+      eprint={2604.04924},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2604.04924}, 
+}
 ```
 
 ## Acknowledgments
